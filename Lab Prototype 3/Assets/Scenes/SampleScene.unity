@@ -677,6 +677,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 192524884}
   m_CullTransparentMesh: 1
+--- !u!1 &213096258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 213096260}
+  - component: {fileID: 213096259}
+  m_Layer: 0
+  m_Name: Build Premium Factory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &213096259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213096258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53cedab687104653a080ade1d583857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tm: {fileID: 2007955352}
+  premiumFactory: {fileID: 2949901623858687462, guid: 0c6f3fa7673c449249d2125997d6c876, type: 3}
+--- !u!4 &213096260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213096258}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 428.43936, y: 230.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &276401937
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +1008,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 665609714}
         m_TargetAssemblyTypeName: GoldFactory, Assembly-CSharp
-        m_MethodName: BuildGoodFactory
+        m_MethodName: BuildGoldFactory
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1366,7 +1412,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tm: {fileID: 2007955352}
-  goldFactory: {fileID: 1057697973}
+  goldFactory: {fileID: 4664501534127616470, guid: 2950279c7ff834e71b83c49d1f498adb, type: 3}
 --- !u!4 &665609715
 Transform:
   m_ObjectHideFlags: 0
@@ -1736,7 +1782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 744001784}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1791968303}
+        m_TargetAssemblyTypeName: DiamondFactory, Assembly-CSharp
+        m_MethodName: BuildDiamondFactory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &744001784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2720,7 +2778,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Premium Factory- Generates  +3 Silver, +2 Gold, +1 Diamond per second
+  m_text: Premium Factory - Generates  +3 Silver, +2 Gold, +1 Diamond per second
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3561,7 +3619,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1616617539}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 213096259}
+        m_TargetAssemblyTypeName: PremiumFactory, Assembly-CSharp
+        m_MethodName: BuildPremiumFactory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1616617539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3680,6 +3750,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1690830605}
   m_CullTransparentMesh: 1
+--- !u!1 &1791968302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1791968304}
+  - component: {fileID: 1791968303}
+  m_Layer: 0
+  m_Name: Build Diamond Factory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1791968303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791968302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcdc13bab9134fb78c124bbf2c7f8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tm: {fileID: 2007955352}
+  diamondFactory: {fileID: 4019999594235330940, guid: 342671cfc66bc4d8f99c7f92fa20972a, type: 3}
+--- !u!4 &1791968304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791968302}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 428.43936, y: 230.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1797159546
 GameObject:
   m_ObjectHideFlags: 0
@@ -4504,9 +4620,6 @@ MonoBehaviour:
   silverText: {fileID: 134356894}
   goldText: {fileID: 1057697975}
   diamondText: {fileID: 1138219540}
-  goldFactory: {fileID: 0}
-  diamondFactory: {fileID: 0}
-  premiumFactory: {fileID: 0}
   silverFactoryCount: 0
   goldFactoryCount: 0
   diamondFactoryCount: 0
@@ -4917,3 +5030,5 @@ SceneRoots:
   - {fileID: 2007955353}
   - {fileID: 938292283}
   - {fileID: 665609715}
+  - {fileID: 1791968304}
+  - {fileID: 213096260}

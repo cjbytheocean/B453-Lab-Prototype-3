@@ -52,6 +52,28 @@ public class TycoonManager : MonoBehaviour
             defaultDiamondTimer = 0f;
         }
 
+        builtSilverTimer += Time.deltaTime;
+        if (builtSilverTimer >= 1f)
+        {
+            silverCount = silverCount + silverFactoryCount + (3 * premiumFactoryCount);
+            silverText.text = $"Silver: {silverCount}";
+            builtSilverTimer = 0f;
+        }
 
+        builtGoldTimer += Time.deltaTime;
+        if (builtGoldTimer >= 1f)
+        {
+            goldCount = goldCount + goldFactoryCount + (2 * premiumFactoryCount);
+            goldText.text = $"Gold: {goldCount}";
+            builtGoldTimer = 0f;
+        }
+
+        builtDiamondTimer += Time.deltaTime;
+        if (builtDiamondTimer >= 1f)
+        {
+            diamondCount = diamondCount + diamondFactoryCount + premiumFactoryCount;
+            diamondText.text = $"Diamond: {diamondCount}";
+            builtDiamondTimer = 0f;
+        }
     }
 }
