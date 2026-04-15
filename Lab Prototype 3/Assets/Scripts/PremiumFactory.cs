@@ -6,9 +6,13 @@ public class PremiumFactory : MonoBehaviour
     public GameObject premiumFactory;
     public void BuildPremiumFactory()
     {
+        Camera c = Camera.main;
+        Vector3 vp = new Vector3(Random.Range(0.1f, 0.9f), Random.Range(0.1f, 0.9f), Mathf.Abs(c.transform.position.z));
+        Vector3 spawnPosition = c.ViewportToWorldPoint(vp);
+
         if (tm.goldCount >= 40 && tm.diamondCount >= 15)
         {
-            Instantiate(premiumFactory, Vector3.zero, Quaternion.identity);
+            Instantiate(premiumFactory, spawnPosition, Quaternion.identity);
             tm.goldCount = tm.goldCount - 40;
             tm.diamondCount = tm.diamondCount - 15;
             tm.goldText.text = $"Gold: {tm.goldCount}";

@@ -6,8 +6,9 @@ public class DiamondFactory : MonoBehaviour
     public GameObject diamondFactory;
     public void BuildDiamondFactory()
     {
-        Vector3 vp = new Vector3(Random.Range(0.1f, 0.9f), Random.Range(0.1f, 0.9f), 10f);
-        Vector3 spawnPosition = Camera.main.ViewportToWorldPoint(vp);
+        Camera c = Camera.main;
+        Vector3 vp = new Vector3(Random.Range(0.1f, 0.9f), Random.Range(0.1f, 0.9f), Mathf.Abs(c.transform.position.z));
+        Vector3 spawnPosition = c.ViewportToWorldPoint(vp);
 
         if (tm.silverCount >= 30 && tm.goldCount >= 10)
         {
